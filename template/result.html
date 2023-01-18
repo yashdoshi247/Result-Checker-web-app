@@ -1,0 +1,13 @@
+<html>
+    <h2>Your Result:</h2>
+    <body>
+        <table border="1">
+            {% for key,value in result.items() %}
+            <tr> {# Example of a comment #}
+                <th>{{ key }}</th>
+                <th>{{ value }}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
