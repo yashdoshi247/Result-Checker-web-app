@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" >
+        <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"> 
+        </script>
+    </head>
+<body>
+        <h2>Result checker</h2>
+        
+        <form action="/submit" method="post">
+            <label for="Physics">Physics:</label>
+            <input type="text" id="physics" name="physics" value="0">
+            <br>
+            <label for="Chemistry">Chemistry:</label>
+            <input type="text" id="chemistry" name="chemistry" value="0">
+            <br>
+            <label for="Math">Math:</label>
+            <input type="text" id="math" name="math" value="0">
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <p>If you click "Submit" button, form-data will be sent to a page called "/submit"</p>
+</body>
+</html>
